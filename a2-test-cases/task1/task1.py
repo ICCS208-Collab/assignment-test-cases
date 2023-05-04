@@ -17,7 +17,7 @@ with open('testcases.txt', 'w') as f:
     for j in range(0, random.randint(1, 20)):
       n = random.randint(1, 100)
       randomlist.append(n)
-      average = (min(randomlist) + max(randomlist) / 2.0)
+      average = ((min(randomlist) + max(randomlist)) / 2.0)
     print(f"if ({func_name}(", end='')
     print("new int[]{", end='')
     print(*randomlist, sep=', ', end='')
